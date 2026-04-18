@@ -100,7 +100,6 @@
       </div>
     </div>
 
-    <!-- Modal : Architecture -->
     <div class="modal-overlay" id="modal-architecture">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('architecture')">
@@ -178,7 +177,6 @@
       </div>
     </div>
 
-    <!-- Modal : 8 Models -->
     <div class="modal-overlay" id="modal-models">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('models')">✕</button>
@@ -255,7 +253,6 @@
       </div>
     </div>
 
-    <!-- Modal : Draw to Audio -->
     <div class="modal-overlay" id="modal-draw">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('draw')">✕</button>
@@ -301,7 +298,6 @@
       </div>
     </div>
 
-    <!-- Modal : Results -->
     <div class="modal-overlay" id="modal-results">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('results')">✕</button>
@@ -349,7 +345,6 @@
       </div>
     </div>
 
-    <!-- Modal : Lessons -->
     <div class="modal-overlay" id="modal-lessons">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('lessons')">✕</button>
@@ -409,7 +404,6 @@
       </div>
     </div>
 
-    <!-- Modal : Vision -->
     <div class="modal-overlay" id="modal-vision">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('vision')">✕</button>
@@ -459,7 +453,6 @@
       </div>
     </div>
 
-    <!-- Modal : Links -->
     <div class="modal-overlay" id="modal-links">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('links')">✕</button>
@@ -529,12 +522,9 @@
       </div>
     </div>
 
-    <!-- =====================================================
-     SLIDES
-     ===================================================== -->
     <div class="reveal">
       <div class="slides">
-        <!-- 1. COVER -->
+        
         <section class="slide-cover">
           <span class="tag">
             <i class="fas fa-microchip"></i> &nbsp; Open Source · VST3 · AU ·
@@ -550,7 +540,6 @@
           </button>
         </section>
 
-        <!-- 2. THE PROBLEM -->
         <section class="slide-dark">
           <span class="tag">01 · The Problem</span>
           <h2>
@@ -562,7 +551,6 @@
             8 tracks. Automatic BPM sync. MIDI control. Generate while you play.
           </p>
 
-          <!-- Schéma simple SVG -->
           <div class="diagram-container">
             <div class="problem-diagram">
               <div class="problem-box problem-box-muted">
@@ -598,7 +586,6 @@
           </button>
         </section>
 
-        <!-- 3. ARCHITECTURE -->
         <section>
           <span class="tag">02 · Architecture</span>
           <h2>VST → Server → GPU Network</h2>
@@ -610,7 +597,7 @@
 
           <div class="diagram-container" id="diagram-arch">
             <div class="arch-diagram">
-              <!-- VST -->
+              
               <div class="arch-box arch-box-accent">
                 <div class="arch-box-icon">
                   <span class="material-symbols-outlined">piano</span>
@@ -621,12 +608,10 @@
                 </div>
               </div>
 
-              <!-- Arrow -->
               <div class="arch-arrow">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </div>
 
-              <!-- Central Server -->
               <div class="arch-box arch-box-muted">
                 <div class="arch-box-icon">
                   <span class="material-symbols-outlined">dns</span>
@@ -637,12 +622,10 @@
                 </div>
               </div>
 
-              <!-- Arrow with fork -->
               <div class="arch-arrow">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </div>
 
-              <!-- Providers column + fallback -->
               <div class="arch-column">
                 <div class="arch-providers">
                   <div class="arch-provider-node">
@@ -683,12 +666,10 @@
                 </div>
               </div>
 
-              <!-- Arrow -->
               <div class="arch-arrow">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </div>
 
-              <!-- WAV output -->
               <div class="arch-wav">
                 <div class="arch-box-icon">
                   <span class="material-symbols-outlined">audio_file</span>
@@ -704,7 +685,6 @@
           </button>
         </section>
 
-        <!-- SLIDE 02b — Central Server Post-Processing -->
         <section class="slide-dark">
           <span class="tag">02b · Central Server</span>
           <h2>What happens before<br />the WAV reaches your DAW.</h2>
@@ -780,7 +760,6 @@
           </button>
         </section>
 
-        <!-- SLIDE 02c — Provider Verification -->
         <section>
           <span class="tag">02c · Provider Verification</span>
           <h2>Proof-of-work via<br />Mel Spectrogram Fingerprinting.</h2>
@@ -858,7 +837,6 @@
           </button>
         </section>
 
-        <!-- 4. 8 MODELS -->
         <section class="slide-dark">
           <span class="tag">03 · AI Models</span>
           <h2>8 Specialized Engines.<br />One Per Track.</h2>
@@ -914,7 +892,6 @@
           </button>
         </section>
 
-        <!-- 5. DRAW TO AUDIO -->
         <section>
           <span class="tag">04 · Draw-to-Audio</span>
           <h2>Sketch a pattern.<br />Hear it rendered.</h2>
@@ -926,7 +903,7 @@
 
           <div class="diagram-container">
             <div class="draw-diagram">
-              <!-- Canvas -->
+              
               <div class="draw-box draw-box-canvas">
                 <svg class="draw-sketch" viewBox="0 0 140 60">
                   <path
@@ -940,12 +917,10 @@
                 </div>
               </div>
 
-              <!-- Arrow -->
               <div class="draw-arrow">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </div>
 
-              <!-- Vision LLM -->
               <div class="draw-box draw-box-accent">
                 <div class="draw-box-icon">
                   <span class="material-symbols-outlined">visibility</span>
@@ -955,12 +930,10 @@
                 <div class="draw-box-fallback">fal.ai fallback</div>
               </div>
 
-              <!-- Arrow -->
               <div class="draw-arrow">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </div>
 
-              <!-- Musical prompt -->
               <div class="draw-box draw-box-muted">
                 <div class="draw-box-icon">
                   <span class="material-symbols-outlined">text_fields</span>
@@ -971,12 +944,10 @@
                 </div>
               </div>
 
-              <!-- Arrow -->
               <div class="draw-arrow">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </div>
 
-              <!-- WAV -->
               <div class="draw-box draw-box-wav">
                 <div class="draw-box-icon">
                   <span class="material-symbols-outlined">audio_file</span>
@@ -992,7 +963,6 @@
           </button>
         </section>
 
-        <!-- 6. RESULTS -->
         <section class="slide-dark">
           <span class="tag">05 · Results</span>
           <h2>Released open source.<br />The rest was unexpected.</h2>
@@ -1029,7 +999,6 @@
           </button>
         </section>
 
-        <!-- 7. LESSONS -->
         <section>
           <span class="tag">06 · Reflection</span>
           <h2>What building this<br />actually taught me.</h2>
@@ -1044,7 +1013,6 @@
           </button>
         </section>
 
-        <!-- 8. VISION -->
         <section class="slide-dark">
           <span class="tag">07 · A Broader Proposition</span>
           <h2>Model packs as<br />the next sample packs.</h2>
@@ -1056,7 +1024,7 @@
 
           <div class="diagram-container">
             <div class="vision-diagram">
-              <!-- Studio / Label -->
+              
               <div class="vision-box vision-box-accent">
                 <div class="vision-box-icon">
                   <span class="material-symbols-outlined">business</span>
@@ -1074,7 +1042,6 @@
                 <span class="vision-arrow-label">hires</span>
               </div>
 
-              <!-- Musicians -->
               <div class="vision-box vision-box-muted">
                 <div class="vision-box-icon">
                   <span class="material-symbols-outlined">piano</span>
@@ -1092,7 +1059,6 @@
                 <span class="vision-arrow-label">produces</span>
               </div>
 
-              <!-- Model License -->
               <div class="vision-box vision-box-accent">
                 <div class="vision-box-icon">
                   <span class="material-symbols-outlined">key</span>
@@ -1110,7 +1076,6 @@
                 <span class="vision-arrow-label">generates</span>
               </div>
 
-              <!-- Royalties -->
               <div class="vision-box vision-box-muted">
                 <div class="vision-box-icon">
                   <span class="material-symbols-outlined">payments</span>
@@ -1120,7 +1085,6 @@
               </div>
             </div>
 
-            <!-- Return arrow -->
             <div class="vision-return">
               <div class="vision-return-line"></div>
               <span class="vision-return-label">
@@ -1149,7 +1113,7 @@
           </p>
 
           <div class="end-grid">
-            <!-- QR obsidian-neural.com -->
+            
             <div class="end-qr-block">
               <img
                 src="assets/images/qrcode.png"
@@ -1172,7 +1136,6 @@
 
             <div class="end-divider"></div>
 
-            <!-- Links -->
             <div class="end-links">
               <div class="end-link-item">
                 <span class="material-symbols-outlined end-link-icon"
@@ -1282,7 +1245,6 @@
       </div>
     </div>
 
-    <!-- Modal : Verification -->
     <div class="modal-overlay" id="modal-verification">
       <div class="modal-box">
         <button class="modal-close" onclick="closeModal('verification')">

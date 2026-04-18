@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 
-/* =====================================================
-   OBSIDIAN Neural — Presentation Theme
-   AES Convention 2026 / Anthony Charretier
-   ===================================================== */
-
 :root {
   --color-primary: #b8605c;
   --color-primary-dark: #8b4545;
@@ -24,7 +19,6 @@
   --card-sub: 0.9rem;
 }
 
-/* ---- Reset Reveal ---- */
 .reveal-viewport {
   background: var(--color-bg);
 }
@@ -35,7 +29,6 @@
   color: var(--color-text);
 }
 
-/* ---- Slides ---- */
 .reveal .slides section {
   height: 100vh;
   display: flex !important;
@@ -47,7 +40,6 @@
   box-sizing: border-box;
 }
 
-/* ---- Typography ---- */
 .reveal h1 {
   font-family: var(--font-display);
   font-weight: 800;
@@ -106,7 +98,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* ---- Gradient text ---- */
 .reveal .text-gradient {
   background: linear-gradient(90deg, #c97571 0%, #b8605c 50%, #d4a5a0 100%);
   -webkit-background-clip: text;
@@ -114,7 +105,6 @@
   background-clip: text;
 }
 
-/* ---- Bouton "En savoir plus" ---- */
 .reveal .btn-more {
   display: inline-flex;
   align-items: center;
@@ -143,7 +133,6 @@
   box-shadow: 0 8px 20px rgba(184, 96, 92, 0.35);
 }
 
-/* ---- Slide accent line ---- */
 .reveal .slide-accent {
   width: 60px;
   height: 3px;
@@ -152,7 +141,6 @@
   margin: 1rem auto;
 }
 
-/* ---- Schémas / diagrams ---- */
 .reveal .diagram-container {
   width: 100%;
   max-width: var(--diagram-max-width);
@@ -165,7 +153,6 @@
   height: auto;
 }
 
-/* ---- Stats inline ---- */
 .reveal .stats-row {
   display: flex;
   gap: 2.5rem;
@@ -201,7 +188,6 @@
   background: var(--color-inactive);
 }
 
-/* ---- Progress bar ---- */
 .reveal .progress {
   height: 3px;
   background: rgba(184, 96, 92, 0.15);
@@ -212,7 +198,6 @@
   background: var(--gradient-primary);
 }
 
-/* ---- Slide number ---- */
 .reveal .slide-number {
   font-family: var(--font-mono);
   font-size: 0.6rem;
@@ -220,7 +205,6 @@
   background: transparent;
 }
 
-/* ---- Titre slide (cover) ---- */
 .slide-cover {
   position: relative;
   overflow: hidden;
@@ -258,12 +242,10 @@
   pointer-events: none;
 }
 
-/* ---- Slides fond alterné ---- */
 .slide-dark {
   background: var(--color-bg-dark) !important;
 }
 
-/* ---- Modal ---- */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -372,7 +354,6 @@
   text-underline-offset: 3px;
 }
 
-/* ---- Navigation hint ---- */
 .nav-hint {
   position: fixed;
   bottom: 1.5rem;
@@ -387,7 +368,6 @@
   pointer-events: none;
 }
 
-/* ---- Scrollbar modal ---- */
 .modal-box::-webkit-scrollbar {
   width: 4px;
 }
@@ -399,7 +379,6 @@
   border-radius: 2px;
 }
 
-/* ---- Model Cards Grid ---- */
 .model-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -439,7 +418,6 @@
   margin-top: 0.5rem;
 }
 
-/* ---- Problem Slide Diagram ---- */
 .problem-diagram {
   display: flex;
   align-items: center;
@@ -567,7 +545,6 @@
   flex-shrink: 0;
 }
 
-/* ---- Architecture Diagram ---- */
 .arch-diagram {
   display: flex;
   align-items: center;
